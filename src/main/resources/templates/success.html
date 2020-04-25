@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+成功
+<!--/*@thymesVar id="hello" type="String"*/-->
+<div th:text="${hello}">
+  这是一个测试Thymeleaf实例
+</div>
+<hr/>
+<div>
+    <tr  th:each="users:${userT}">
+        <td th:text="${users}"></td>
+    </tr>
+</div>
+</body>
+</html>

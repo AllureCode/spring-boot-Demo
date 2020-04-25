@@ -1,0 +1,10 @@
+#设置自定义的国际化
+spring:
+  messages:
+    basename: i18n.login
+#关闭thymeleaf的缓存
+  thymeleaf:
+    cache: false
+server:
+  servlet:
+    context-path: /crud
