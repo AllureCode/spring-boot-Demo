@@ -1,10 +1,15 @@
-#ÉèÖÃ×Ô¶¨ÒåµÄ¹ú¼Ê»¯
+#ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½Ê»ï¿½
 spring:
   messages:
     basename: i18n.login
-#¹Ø±ÕthymeleafµÄ»º´æ
+#ï¿½Ø±ï¿½thymeleafï¿½Ä»ï¿½ï¿½ï¿½
   thymeleaf:
     cache: false
+  mvc:
+    date-format: yyyy-MM-dd HH:mm
+    hiddenmethod:
+      filter:
+        enabled: true #å¼€å¯æ”¯æŒput deletç­‰æ–¹å¼çš„æäº¤
 server:
   servlet:
     context-path: /crud

@@ -40,6 +40,7 @@ public class addMyViewHandler implements WebMvcConfigurer {
      * 方法二
      * @param registry
      */
+    @Override
     public void addViewControllers(ViewControllerRegistry registry){
         registry.addViewController("/login.html").setViewName("login");
         registry.addViewController("/").setViewName("login");
@@ -57,6 +58,7 @@ public class addMyViewHandler implements WebMvcConfigurer {
     /**
      * 拦截器
      */
+    @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
                 .excludePathPatterns("/login.html","/user/*"
